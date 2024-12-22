@@ -12,6 +12,7 @@
     "@astrojs/alpinejs": "^0.4.1",
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/tailwind": "^5.1.4",
+    "@playform/inline": "^0.1.0",
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.14.7",
     "astro": "^5.1.1",
