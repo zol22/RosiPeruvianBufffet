@@ -1,7 +1,7 @@
 ---
 import { menuMain } from "~/data/menus";
 const currentYear = new Date().getFullYear();
-import { siteName, linkPrivacyPolicy } from "~/data/config";
+import { siteName } from "~/data/config";
 ---
 
 <footer class="bg-brand-green text-white">
@@ -16,6 +16,6 @@ import { siteName, linkPrivacyPolicy } from "~/data/config";
 				))
 			}
 		</nav>
-		<p class="mt-10 text-center text-sm">&copy; {currentYear} {siteName}. All rights reserved. <a class="underline" href={linkPrivacyPolicy}>Privacy policy</a></p>
+		<p class="mt-10 text-center text-sm">&copy; {currentYear} {siteName}. All rights reserved. <a class="underline" href="/privacy-policy">Privacy policy</a></p>
 	</div>
 </footer>

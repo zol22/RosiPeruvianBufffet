@@ -6,9 +6,6 @@ export const siteName = "AstroPie";
 export const siteSlogan = "The best pies in the galaxy!";
 export const themeColor = "#FF0000";
 
-// Links
-export const linkPrivacyPolicy = "/privacy-policy";
-
 export const phone = {
 	href: "tel:+123456789",
 	label: "(123) 456-789",

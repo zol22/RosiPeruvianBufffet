@@ -1,5 +1,3 @@
-import { LinkPrivacyPolicy } from "./config";
-
 export const menuMain = [
     {
         name: "Home",
@@ -55,7 +53,7 @@ export const footerTertiary = [
     {
         title: "Links",
         items: [
-            { name: "privacybeleid", url: LinkPrivacyPolicy },
+            { name: "privacybeleid", url: '/privacy-policy' },
             { name: "api status", url: "/api-status" },
         ],
     },
