@@ -7,11 +7,12 @@ interface BadgeProps {
 }
 
 const colors = {
-	red: "bg-brand-red/60 text-white",
-	green: "bg-brand-green/60 text-white",
+	red: "bg-brand-red/5 text-brand-red ring-1 ring-brand-red",
+	green: "bg-brand-green/5 text-brand-green ring-1 ring-brand-green",
+	white: "bg-white",
 };
 ---
 
-<span class={`inline-flex not-prose items-center mb-4 rounded-full px-3 py-1 text-sm font-semibold ${colors[color]}`}
+<span class={`inline-flex not-prose items-center mb-4 rounded-full px-3 py-1 text-base font-semibold ${colors[color]}`}
 	>{title}</span
 >

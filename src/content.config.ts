@@ -1,5 +1,5 @@
 import { z, defineCollection } from "astro:content";
-import { file, glob } from "astro/loaders";
+import { file } from "astro/loaders";
 
 const plates = defineCollection({
 	loader: file("src/data/plates.json"),
@@ -26,11 +26,11 @@ const reviews = defineCollection({
 });
 
 const gallery = defineCollection({
-	loader: glob({ pattern: "**/*.{png,jpg,jpeg,webp}", base: "./src/assets/images/gallery" }),
+	loader: file("src/data/gallery.json"),
 	schema: ({ image }) =>
 		z.object({
-			title: z.string().optional(),
-			alt: z.string().optional(),
+			title: z.string(),
+			alt: z.string(),
 			image: image(),
 		}),
 });

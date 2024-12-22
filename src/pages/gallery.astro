@@ -6,49 +6,28 @@ import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const gallery = await getCollection("gallery");
-
-console.log(gallery);
 ---
 
 <Layout>
-	<Section>
+	<Section class:list={'[&>.container]:pb-0'}>
 		<Heading>
 			<h1 slot="heading-title" class="font-black text-brand-green h2">Gallery</h1>
 			<p slot="heading-content">
 				Get a feel of our restaurant and food through our gallery. We promise a memorable culinary experience.
 			</p>
 		</Heading>
-
-		<div class="masonry-grid grid grid-cols-3">
-			<div class="masonry-grid-item">
-				<a href="https://placecats.com/1200/800" class="glightbox">
-					<img
-						src="https://placecats.com/300/200"
-						class="h-full w-full object-cover object-center"
-						alt="Image 1"
-					/>
-				</a>
-			</div>
-			<div class="masonry-grid-item">
-				<a href="https://placecats.com/1200/800" class="glightbox">
-					<img
-						src="https://placecats.com/300/200"
-						class="h-full w-full object-cover object-center"
-						alt="Image 2"
-					/>
-				</a>
-			</div>
-			<div class="masonry-grid-item">
-				<a href="https://placecats.com/1200/800" class="glightbox">
-					<img
-						src="https://placecats.com/300/200"
-						class="h-full w-full object-cover object-center"
-						alt="Image 3"
-					/>
-				</a>
-			</div>
-		</div>
 	</Section>
+    <div class="masonry-grid grid grid-cols-2 lg:grid-cols-3 pb-16 lg:pb-32">
+        {
+            gallery.map((item) => (
+                <div class="masonry-grid-item">
+                    <a href={item.data.image.src} class="glightbox">
+                        <Picture src={item.data.image} alt={item.data.alt} class="h-full w-full object-cover object-center" />
+                    </a>
+                </div>
+            ))
+        }
+    </div>
 </Layout>
 
 <script>
@@ -57,12 +36,9 @@ console.log(gallery);
 
 	document.addEventListener("astro:page-load", () => {
 		const lightbox = GLightbox({
-			// selector: ".glightbox",
 			touchNavigation: true,
 			autoplayVideos: true,
 			loop: true,
-			// width: "90svw",
-			// height: "auto",
 			draggable: true,
 		});
 	});
