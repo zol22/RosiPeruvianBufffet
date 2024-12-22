@@ -56,7 +56,6 @@ export const footerTertiary = [
         title: "Links",
         items: [
             { name: "privacybeleid", url: LinkPrivacyPolicy },
-            { name: "cookiebeleid", url: LinkCookiePolicy },
             { name: "api status", url: "/api-status" },
         ],
     },
