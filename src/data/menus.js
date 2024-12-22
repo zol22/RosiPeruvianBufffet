@@ -1,4 +1,4 @@
-import { LinkCookiePolicy, LinkPrivacyPolicy } from "./config";
+import { LinkPrivacyPolicy } from "./config";
 
 export const menuMain = [
     {
