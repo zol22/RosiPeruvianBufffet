@@ -13,7 +13,7 @@ import playformInline from "@playform/inline";
 export default defineConfig({
 	site: "https://astropie.netlify.app",
 	base: "/",
-	trailingSlash: 'always',
+	// trailingSlash: 'always',
 	integrations: [
 		tailwind(),
 		alpinejs(),
