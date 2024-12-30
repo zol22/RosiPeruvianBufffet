@@ -6,27 +6,27 @@ export const menuMain = [
     },
     {
         name: "Menu",
-        url: "/menu",
+        url: "/menu/",
         highlighted: false,
     },
     {
         name: "About Us",
-        url: "/about-us",
+        url: "/about-us/",
         highlighted: false,
     },
     {
         name: "Gallery",
-        url: "/gallery",
+        url: "/gallery/",
         highlighted: false,
     },
     {
         name: "Contact",
-        url: "/contact",
+        url: "/contact/",
         highlighted: false,
     },
     {
         name: "Book",
-        url: "/book",
+        url: "/book/",
         highlighted: true,
     },
 ];
