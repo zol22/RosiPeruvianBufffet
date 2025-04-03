@@ -22,11 +22,6 @@ export const menuMain = [
     {
         name: "Contact",
         url: "/contact",
-        highlighted: false,
-    },
-    {
-        name: "Book",
-        url: "/book",
         highlighted: true,
     },
 ];

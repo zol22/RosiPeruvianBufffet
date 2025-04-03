@@ -1,58 +1,39 @@
 // Global variables
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
-export const siteDomain = "astropie.com";
-export const siteName = "AstroPie";
-export const siteSlogan = "The best pies in the galaxy!";
-export const themeColor = "#FF0000";
+export const siteDomain = "rosicatering.com";
+export const siteName = "Rosi Peruvian Catering";
+export const siteSlogan = "Sabor Peruano Hecho en Casa – Lunch & Dinner Buffets in Orlando";
+export const themeColor = "#F43F5E";
+export const address = "Orlando, FL 32837, USA";
+export const hours = "Monday – Sunday: 11:00 AM – 8:00 PM"
 
 export const phone = {
-	href: "tel:+123456789",
-	label: "(123) 456-789",
+	href: "tel:+2018152416",
+	label: "(201) 815-2416",
 };
 
 export const email = {
-	href: "mailto:info@astropie.com",
-	label: "info@astropie.com",
+	href: "rosiperubuffet@gmail.com",
+	label: "rosiperubuffet@gmail.com",
 };
 
-export const address = {
-	street: "1234 Space Street",
-	city: "Galaxy City",
-	zip: "12345",
-	state: "Milky Way",
-	country: "Space",
-};
 
 export const socialMedia = {
 	facebook: {
-		url: "https://facebook.com",
+		url: "https://www.facebook.com/rosiperubuffet",
 		label: "Facebook",
 		icon: "facebook",
 	},
-	twitter: {
-		url: "https://twitter.com",
-		label: "Twitter",
-		icon: "twitter",
-	},
 	instagram: {
-		url: "https://instagram.com",
+		url: "https://www.instagram.com/rosiperubuffet/",
 		label: "Instagram",
 		icon: "instagram",
 	},
-	youtube: {
-		url: "https://youtube.com",
-		label: "YouTube",
-		icon: "youtube",
+	tiktok: {
+		url: "https://www.tiktok.com/@rosi.peruvianbuffet",
+		label: "Tiktok",
+		icon: "tiktok",
 	},
 };
 
-export const hours = {
-	monday: "9:00 - 17:00",
-	tuesday: "9:00 - 17:00",
-	wednesday: "9:00 - 17:00",
-	thursday: "9:00 - 17:00",
-	friday: "9:00 - 17:00",
-	saturday: "9:00 - 17:00",
-	sunday: "Closed",
-};

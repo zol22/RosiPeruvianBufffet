@@ -9,46 +9,45 @@ import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import Grid from "~/components/Grid.astro";
 import Heading from "~/components/Heading.astro";
 import WideImage from "~/components/WideImage.astro";
-import ReviewSlider from "~/components/ReviewSlider.astro";
+import { address, phone, email, hours } from "~/data/config";
 
 // Images
-import PizzaHero from "~/assets/images/pizza-hero.png";
-import Pizza from "~/assets/images/pizza.png";
-import Spaghetti from "~/assets/images/spaghetti.png";
-import Fish from "~/assets/images/fish.png";
-import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
-import reviewAuthors from "~/assets/images/review-authors.png";
+import panConChicharron from "~/assets/images/panConChicharron.png";
+import carapulcra from "~/assets/images/carapulcra.jpg";
+import chicharron from "~/assets/images/chicharron.jpg";
+import tamales from "~/assets/images/tamales.jpg";
+import food from "~/assets/images/food.jpg";
+import rosa from "~/assets/images/rosa.jpeg";
 import Dessert from "~/assets/images/dessert.png";
-import Mussels from "~/assets/images/mussels2.png";
 ---
 
-<Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!">
-	<Section class:list={"bg-white"}>
+<Layout title="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" pageTitle="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" description="Authentic Peruvian lunch and dinner catering in Orlando, FL. Perfect for family gatherings, events, and parties. Only pickup & delivery.">
+	<Section>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge title="il ristorante italiana" />
-				<h1 class="font-black">Real Italian food in a real Italian restaurant...</h1>
+				<Badge title="Rosi Peruvian Buffet" />
+				<h1 class="font-black">Sabor Peruano Hecho en Casa</h1>
 
 				<p>
-					Experience the taste of Italy with our authentic dishes made from the finest ingredients. Indulge in
-					our wide variety of pizzas, pastas, and desserts, all crafted with love and tradition. Whether
-					you're dining in or taking out, we promise a memorable culinary experience.
+					Peruvian Buffet & Snacks for Every Occasion — whether you're planning a family gathering, a 
+					birthday, or just craving homemade Peruvian flavors, Rosa’s kitchen brings tradition and 
+					heart to your table.
 				</p>
 
-				<span class="text-brand-green font-medium">✔ We also deliver</span>
+				<span class="text-peru font-medium"> Only Pickup &amp;  Delivery </span>
 
 				<div class="mt-8 flex items-center gap-x-8">
-					<Button url="/book">Book now</Button>
+					<Button url="/menu">See our Menu</Button>
 					<ButtonCallUs />
 				</div>
 			</div>
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={PizzaHero}
+					class="mx-auto"
+					src={panConChicharron}
 					height={600}
 					formats={["avif", "webp"]}
-					alt="A description of my image."
+					alt="Pan con chicharrón, a traditional Peruvian pork sandwich with sweet potato and salsa criolla, held on a colorful street in Lima, Peru"
 					loading={"eager"}
 					fetchpriority={"high"}
 				/>
@@ -56,14 +55,13 @@ import Mussels from "~/assets/images/mussels2.png";
 		</Hero>
 	</Section>
 
-	<WideImage image={DecorativeImage} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
+	<WideImage image={food} alt="Three plates of gourmet Peruvian dishes served on a rustic wooden table, featuring grilled steak with lettuce and red onions, crispy croquettes with herbs, and a nut-crusted meat salad with cashews and chili peppers" class:list={"aspect-video lg:aspect-[16/6]"} />
 
 	<Section class:list={"bg-white"}>
 		<Heading>
-			<h2 slot="heading-title" class="font-black text-brand-green h2">Our dishes</h2>
+			<h2 slot="heading-title" class="font-black text-brand-green h2">House Specialities</h2>
 			<p slot="heading-content">
-				Explore our selection of authentic Italian dishes, from classic pizzas to homemade pastas.
-			</p>
+				🇵🇪 Explore Our Selection of Authentic Peruvian Dishes</p>
 		</Heading>
 
 		<Grid>
@@ -71,14 +69,14 @@ import Mussels from "~/assets/images/mussels2.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Pizza}
+						src={tamales}
 						formats={["avif", "webp"]}
-						alt="A description of my image."
+						alt="Traditional Peruvian tamales wrapped in banana leaves, filled with seasoned pork and corn dough, served with salsa criolla"
 					/>
-					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
+					<h3 class="h4 mt-0 font-black">Tamales</h3>
 					<p>
-						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
-						various shapes and sizes, each suited to different sauces and preparations.
+						Steamed corn dough with flavorful pork or chicken, wrapped in banana leaves and served with fresh salsa criolla.
+
 					</p>
 				</div>
 			</div>
@@ -87,14 +85,13 @@ import Mussels from "~/assets/images/mussels2.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Spaghetti}
+						src={carapulcra}
 						formats={["avif", "webp"]}
-						alt="A description of my image."
+						alt="Authentic Peruvian carapulcra, a traditional stew made with dried potatoes, pork, and rich peanut sauce, garnished with rice."
 					/>
-					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
+					<h3 class="h4 mt-0 font-black">Carapulcra</h3>
 					<p>
-						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
-						various shapes and sizes, each suited to different sauces and preparations.
+						A rich and comforting stew made with sun-dried potatoes, pork, and a savory peanut-chili blend — a timeless Andean favorite.					
 					</p>
 				</div>
 			</div>
@@ -103,118 +100,45 @@ import Mussels from "~/assets/images/mussels2.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Fish}
+						src={chicharron}
 						formats={["avif", "webp"]}
-						alt="A description of my image."
+						alt="Peruvian-style chicharrón, crispy fried pork belly served with sweet potato and pickled red onions"
 					/>
-					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
+					<h3 class="h4 mt-0 font-black">Chicharron</h3>
 					<p>
-						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
-						various shapes and sizes, each suited to different sauces and preparations.
+						Crispy, juicy fried pork belly served with sweet potatoes and marinated red onions — a street food classic with bold flavor.
 					</p>
 				</div>
 			</div>
 		</Grid>
+		<div class="mt-8 flex items-center  justify-center text-center">
+			<Button url="/menu">See our Menu</Button>
+		</div>
 	</Section>
 
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose lg:order-2">
-				<h1 class="font-black">Pizza</h1>
+				
 
-				<p>
-					Pizza is a beloved dish that originated in Italy and has since become a global sensation. Its
-					versatility allows for endless combinations of toppings, from classic margherita with fresh
-					tomatoes, mozzarella, and basil, to more adventurous options like barbecue chicken or vegan cheese.
-				</p>
-
-				<p>
-					Whether enjoyed at a cozy pizzeria or delivered to your doorstep, pizza brings people together and
-					satisfies cravings like no other food. Beyond its delicious taste, pizza also holds cultural
-					significance. It is often associated with gatherings, celebrations, and comfort.
-				</p>
-
-				<div class="mt-8">
-					<Button url="/menu">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="size-5 inline-block"
-							aria-hidden="true"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-								clip-rule="evenodd"></path>
-						</svg>
-						View menu
-					</Button>
-				</div>
-			</div>
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto"}
-					src={PizzaHero}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-			</div>
-		</Hero>
-	</Section>
-
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge color="red" title="delicious" />
-				<h2 class="font-black h2 my-4">Plate of the week</h2>
-
-				<span class="text-brand-red text-2xl font-bold italic">Fresh Mussels!</span>
-
-				<p>
-					Our plate of the week is a delicious dish that changes every week. This week, we're featuring fresh
-					mussels cooked in a white wine and garlic sauce, served with a side of crispy fries. Don't miss out
-					on this limited-time offer!
-				</p>
-
-				<div class="mt-8">
-					<Button color="red" url="/book">Book now</Button>
-				</div>
-			</div>
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto"}
-					src={Mussels}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-			</div>
-		</Hero>
-	</Section>
-
-	<!-- Reviews -->
+	<!-- My Story -->
 	<Section class:list={"bg-brand-red/20 relative"}>
 		<div class="py-16">
 			<Hero>
-				<div slot="hero-content-left" class="prose max-w-none order-2">
-					<div class="text-center not-prose">
-						<Badge color="white" title="reviews" />
-					</div>
-					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">What our customers say...</h2>
-					<div slot="heading-content">
-						<p class="text-center">
-							Don't just take our word for it. Read what our customers have to say about their dining
-							experience at our restaurant.
-						</p>
-
-						<ReviewSlider />
-					</div>
+				<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+					<Badge color="peru" title="Hi There!" />
+					<h2 class="font-black h2 my-4">My Story</h2>
+	
+					<p>
+						Rosa is a Peruvian cook who has always loved being in the kitchen. She learned everything from her mother and has spent years perfecting her food. Today, she runs a small family business where she cooks with love, mixing traditional flavors with new ideas. Every plate she makes is full of heart and made to be shared.
+					</p>
+	
+				
 				</div>
-
 				<div slot="hero-content-right">
-					<Picture src={reviewAuthors} alt="Review authors" class="w-full h-auto" />
+					<Picture
+						class:list={"mx-auto rounded-full  w-80 h-80  object-cover shadow-lg"}
+						src={rosa}
+						formats={["avif", "webp"]}
+						alt="Rosa, the Peruvian cook and founder of Rosi Peruvian Catering, smiling proudly in her kitchen while preparing traditional homemade dishes"
+					/>
 				</div>
 			</Hero>
 		</div>
@@ -243,60 +167,71 @@ import Mussels from "~/assets/images/mussels2.png";
 		</svg>
 	</Section>
 
-	<!-- Desserts -->
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
-				<Badge title="dolce" />
-				<h2 slot="heading-title" class="font-black text-brand-green h2 my-4">Desserts</h2>
-				<div slot="heading-content">
-					<p>
-						Indulge in our selection of sweet treats, from classic tiramisu to decadent chocolate cake. Our
-						desserts are the perfect way to end your meal on a high note.
-					</p>
-
-					<p>
-						Experience the taste of Italy with our authentic dishes made from the finest ingredients.
-						Indulge in our wide variety of pizzas, pastas, and desserts, all crafted with love and
-						tradition. Whether you're dining in or taking out, we promise a memorable culinary experience.
-					</p>
-
-					<div class="mt-8">
-						<Button url="/menu">See our menu</Button>
-					</div>
-				</div>
+	<!--Our Services -->
+	<Section class="bg-white">
+		<div class="prose max-w-none mb-12">
+		  <Badge title="Services" />
+		  <h2 class="font-black text-brand-green mt-2">Our Services</h2>
+		
+		</div>
+	  
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+		  <!-- Catering Card -->
+		  <div class="bg-brand-pink/10 rounded-2xl shadow-md p-8 flex flex-col justify-between">
+			<div>
+			  <h3 class="font-black text-brand-green text-2xl mt-2">Peruvian Catering</h3>
+			  <p class="mt-4 text-gray-700">
+				From birthdays and family gatherings to corporate lunches and private events, our catering service delivers authentic Peruvian dishes your guests will love.
+			  </p>
+			  <p class="mt-2 text-gray-700">
+				Full buffets, snacks, and professional delivery available.
+			  </p>
 			</div>
-
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto"}
-					src={Dessert}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
+			<div class="mt-6">
+			  <Button url="/menu">Explore Catering</Button>
 			</div>
-		</Hero>
-	</Section>
+		  </div>
+	  
+		  <!-- Lunch & Dinner Card -->
+		  <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between">
+			<div>
+			  <h3 class="font-black text-brand-green text-2xl mt-2">Lunch & Dinner Pickup</h3>
+			  <p class="mt-4 text-gray-700">
+				Enjoy ready-to-serve Peruvian meals like lomo saltado, ají de gallina, or arroz chaufa — perfect for busy weekdays or casual comfort food cravings.
+			  </p>
+			  <p class="mt-2 text-gray-700">
+				Fresh, homemade dishes available for daily pickup.
+			  </p>
+			</div>
+			<div class="mt-6">
+			  <Button url="/menu">Order Now</Button>
+			</div>
+		  </div>
+		</div>
+	  </Section>
+	  
 
 	<!-- Contact -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
-				<Badge color="red" title="benvenuto" />
-				<h2 slot="heading-title" class="font-black text-brand-red h2 my-4">Drop by and say hello</h2>
+				<Badge color="peru" title="Contact" />
+				<h2 slot="heading-title" class="font-black text-brand-peru h2 my-4">Contact us</h2>
+				<p >Only Pickup & Delivery</p>
 				<div slot="heading-content">
 					<p>
-						We're located in the heart of the city, just a stone's throw away from the main square. Our
-						restaurant is the perfect place to enjoy a delicious meal with friends and family.
+						Have questions or ready to place an order? We're here to help! Whether you're planning an event or picking up lunch or dinner, contact us to enjoy authentic Peruvian food made with love.
 					</p>
 
-					<span class="text-brand-red font-medium">
-						✔ We also do take-away, so you can enjoy your food at home
-					</span>
+					<div class="mt-6 space-y-3">
+						<p><strong>📍 Address:</strong> {address}</p>
+						<p><strong>📞 Phone:</strong> <a href="tel:+14071234567" class="text-brand-green">{phone.label}</a></p>
+						<p><strong>📧 Email:</strong> <a href="mailto:info@rosicatering.com" class="text-brand-green">{email.label}</a></p>
+						<p><strong>🕒 Hours:</strong> {hours}</p>
+					  </div>
 
 					<div class="mt-8">
-						<Button color="red" url="/book">Book a table</Button>
+						<Button color="red" url="/contact">Contact us</Button>
 					</div>
 				</div>
 			</div>

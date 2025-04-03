@@ -9,34 +9,25 @@ import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import Article from "~/components/Article.astro";
 
 // Images
-import PizzaHero from "~/assets/images/pizza-hero.png";
+import rosa from "~/assets/images/rosa.jpeg";
 ---
 
 <Layout>
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge title="il ristorante italiana" />
-				<h1 class="font-black">Real Italian food in a real Italian restaurant...</h1>
-
-				<p>
-					Experience the taste of Italy with our authentic dishes made from the finest ingredients. Indulge in
-					our wide variety of pizzas, pastas, and desserts, all crafted with love and tradition. Whether
-					you're dining in or taking out, we promise a memorable culinary experience.
-				</p>
-
-				<span class="text-brand-green font-medium">✔ We also deliver</span>
+				<Badge title="Rosa" />
+				<h1 class="font-black">A little bit more about me.</h1>
 
 				<div class="mt-8 flex items-center gap-x-8">
-					<Button url="/book">Book now</Button>
+					<Button url="/contact">Contact us</Button>
 					<ButtonCallUs />
 				</div>
 			</div>
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={PizzaHero}
-					height={600}
+				class:list={"mx-auto rounded-full  w-80 h-80  object-cover shadow-lg"}
+				src={rosa}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
 					loading={"eager"}
@@ -48,41 +39,35 @@ import PizzaHero from "~/assets/images/pizza-hero.png";
 
 	<Section class:list={'bg-white'}>
 		<Article>
-			<h2>Welcome to AstroPie</h2>
+			<h2>Welcome to Rosi Peruvian Buffet </h2>
 			<p>
-				Nestled in the heart of the city, <strong>AstroPie</strong> offers an authentic Italian dining experience
-				like no other. From the moment you step through our doors, you'll be transported to the vibrant streets of
-				Italy, where good food and great company are at the center of life.
+				Located in the heart of Orlando, Rosi Peruvian Catering brings the bold, authentic flavors of Peru straight to your table. Whether you're planning a family gathering, corporate event, or simply craving homemade Peruvian food, we’re here to make your meal unforgettable.
+
+
 			</p>
 
-			<h3>Our Story</h3>
+			<h3> 👩‍🍳 Our Story</h3>
 			<p>
-				Founded in <em>1998</em>, our family-owned restaurant has always been a labor of love. Inspired by the
-				recipes passed down through generations, we bring the <u>rich culinary heritage</u> of Italy to your plate.
-				Every dish tells a story, and every meal is a celebration of flavor.
+				Founded by Rosa, a passionate home cook and proud Peruvian, our catering service began as a family dream. With recipes passed down from her mother and grandmother, Rosa turned her love for cooking into a service that now feeds families, friends, and entire events across Orlando.
+
+				Every tamale, every chicharrón, and every plate of arroz con pollo is made from scratch — just like it’s done back home.
 			</p>
 
-			<h3>Our Philosophy</h3>
-			<blockquote>"The secret ingredient is always love."</blockquote>
+			<h3> 💖 Our Philosophy</h3>
+			<blockquote>"Sabor peruano hecho en casa — con amor"</blockquote>
 			<p>
-				At AstroPie, we believe in the simple joy of fresh ingredients, time-honored techniques, and a
-				passion for creating memorable meals. From our hand-rolled pasta to our wood-fired pizzas, every bite is
-				crafted with care.
+				At Rosi Peruvian Catering, we believe great food comes from the heart. That’s why we use traditional ingredients, cook with care, and treat every client like family. Whether it’s a full buffet or a lunch order, every bite reflects Rosa’s heritage and hospitality.
 			</p>
 
-			<h4>What Makes Us Special?</h4>
+			<h4>🌟 What Makes Us Special?</h4>
 			<ul>
-				<li><strong>Authenticity:</strong> Traditional recipes, just like Nonna used to make.</li>
-				<li><strong>Fresh Ingredients:</strong> Locally sourced produce and imported Italian staples.</li>
-				<li><strong>Warm Atmosphere:</strong> A place where everyone feels like family.</li>
+				<li><strong>Authentic Peruvian Recipes:</strong>  Prepared the same way Rosa learned in her childhood kitchen in Peru.</li>
+				<li><strong> Homemade & Fresh:</strong> No shortcuts — just real ingredients and traditional flavors..</li>
+				<li><strong>Warm, Family Service:</strong>  We don’t just cook for you — we care for you.</li>
+				<li><strong> Pickup & Event Catering: </strong> Serving homemade breakfast, lunch, and dinner across Orlando</li>
+
 			</ul>
 
-			<h3>Join Us</h3>
-			<p>
-				Whether you're celebrating a special occasion or simply indulging in the pleasures of Italian cuisine, <strong
-					>AstroPie</strong
-				> is the perfect destination. <em>Come for the food, stay for the memories.</em>
-			</p>
 		</Article>
 	</Section>
 </Layout>

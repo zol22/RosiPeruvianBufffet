@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    --color-peru: #621414;
+    --pink-color: #E2ABAC;
+    --light-pink-color: #F9DEDC;
+    --other-pink-color: #E2ABAC;
+  }
 html,
 body {
 	@apply h-full antialiased scroll-smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -54,20 +62,29 @@ p {
 	@apply leading-relaxed;
 }
 
-.button {
-	@apply rounded-full px-4 py-3 text-base transition duration-300 font-bold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+
+@layer utilities {
+    .bg-peru {
+      background-color: var(--color-peru);
+    }
+    .text-peru {
+      color: var(--color-peru);
+
+    }
+    .button-peru {
+	  @apply bg-peru text-white rounded-full px-4 py-3 text-base transition duration-300 font-bold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+
+    }
+    .button-peru:hover {
+      transform: scale(1.05);
+      background-color: #4f0f0f; /* optional hover color */
+    }
+    
 }
 
-.button-green {
-	@apply bg-brand-green hover:bg-brand-green/80 text-white focus-visible:outline-brand-green;
-}
-
-.button-red {
-	@apply bg-brand-red hover:bg-brand-red/80 text-white focus-visible:outline-brand-red;
-}
 
 .menu-item-highlighted.menu-item-highlighted {
-	@apply text-white bg-brand-green px-4 rounded-full py-1.5 hover:bg-opacity-80 hover:text-white;
+	@apply text-white bg-brand-peru px-4 rounded-full py-1.5 hover:bg-opacity-80 hover:text-white;
 }
 
 .menu-item-active.menu-item-highlighted {
@@ -75,7 +92,7 @@ p {
 }
 
 .menu-item-active:not(.menu-item-highlighted) {
-	@apply text-brand-green font-bold;
+	@apply text-brand-peru font-bold;
 }
 
 [x-cloak] {
@@ -90,7 +107,7 @@ section.bg-brand-red + section.bg-brand-red > .container {
 
 input,
 textarea {
-	@apply border border-gray-300 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-green;
+	@apply border border-gray-300 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-peru;
 }
 
 label {

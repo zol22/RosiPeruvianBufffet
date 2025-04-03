@@ -1,14 +1,14 @@
 ---
-const { color = "green", title = "" }: BadgeProps = Astro.props;
+const { color = "peru", title = "" }: BadgeProps = Astro.props;
 
 interface BadgeProps {
-	color?: "red" | "green";
+	color?: "red" | "peru";
 	title?: string;
 }
 
 const colors = {
 	red: "bg-brand-red/5 text-brand-red ring-1 ring-brand-red",
-	green: "bg-brand-green/5 text-brand-green ring-1 ring-brand-green",
+	peru: "bg-peru/5 text-brand-peru ring-1 ring-brand-peru",
 	white: "bg-white",
 };
 ---
