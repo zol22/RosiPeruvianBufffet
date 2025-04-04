@@ -11,7 +11,6 @@ AstroPie is perfect for restaurant owners, developers, and designers who want to
 -   **Astro**: The core framework for building fast, content-focused websites.
 -   **TailwindCSS**: A utility-first CSS framework for rapid UI development.
 -   **Alpine.js**: A lightweight JavaScript framework for adding interactivity.
--   **Swiper**: A modern slider library for creating responsive sliders.
 -   **GLightbox**: A pure JavaScript lightbox for displaying images and videos.
 
 ## 🚀 Installation and Deployment

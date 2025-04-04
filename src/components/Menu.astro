@@ -7,11 +7,11 @@ const siteLangFormat = siteLang.replace("_", "-");
 
 <!-- Quick Nav -->
 <div class="mb-20 sticky top-8 z-10">
-	<nav class="bg-brand-peru  text-white rounded-full max-w-5xl mx-auto swiper-plates w-full">
-		<ul id="plate-nav" class="px-6 py-3 swiper-wrapper h-auto w-auto">
+	<nav class="bg-brand-peru  text-white rounded-full max-w-5xl mx-auto w-full">
+		<ul id="plate-nav" class="px-6 py-3  h-auto w-auto flex justify-center gap-x-4">
 			{
 				plates.map((plate) => (
-					<li class="swiper-slide !w-max">
+					<li>
 						<a href={`#${plate.data.slug}`} class="font-medium select-none">
 							{plate.data.prettyName}
 						</a>
@@ -60,16 +60,3 @@ const siteLangFormat = siteLang.replace("_", "-");
 	}
 </div>
 
-<script>
-	import Swiper from "swiper";
-	import "swiper/css";
-
-	document.addEventListener("astro:page-load", () => {
-		const swiperPlates = document.querySelector(".swiper-plates") as HTMLElement;
-		new Swiper(swiperPlates, {
-			loop: false,
-			spaceBetween: 32,
-            slidesPerView: "auto",
-		});
-	});
-</script>

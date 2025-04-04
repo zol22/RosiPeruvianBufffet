@@ -114,10 +114,6 @@ label {
 	@apply block text-sm/6 font-medium;
 }
 
-/* Swiper */
-.swiper-pagination-bullet-active.swiper-pagination-bullet-active {
-	@apply bg-brand-red;
-}
 
 /* inter-300 - latin */
 @font-face {
