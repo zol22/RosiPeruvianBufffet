@@ -9,7 +9,7 @@ import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import Grid from "~/components/Grid.astro";
 import Heading from "~/components/Heading.astro";
 import WideImage from "~/components/WideImage.astro";
-import { address, phone, email, hours } from "~/data/config";
+import { address, phone, email, hours, default_image } from "~/data/config";
 
 // Images
 import panConChicharron from "~/assets/images/panConChicharron.png";
@@ -21,7 +21,7 @@ import rosa from "~/assets/images/rosa.jpeg";
 import Dessert from "~/assets/images/dessert.png";
 ---
 
-<Layout title="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" pageTitle="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" description="Authentic Peruvian lunch and dinner catering in Orlando, FL. Perfect for family gatherings, events, and parties. Only pickup & delivery.">
+<Layout title="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" pageTitle="Rosi Peruvian Catering & Homemade Meals in Orlando, FL" description="Authentic Peruvian lunch and dinner catering in Orlando, FL. Perfect for family gatherings, events, and parties. Only pickup & delivery." image={default_image}>
 	<Section>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">

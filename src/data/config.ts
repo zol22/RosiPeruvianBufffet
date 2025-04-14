@@ -7,7 +7,7 @@ export const siteSlogan = "Sabor Peruano Hecho en Casa – Lunch & Dinner Buffet
 export const themeColor = "#F43F5E";
 export const address = "Orlando, FL 32837, USA";
 export const hours = "Monday – Sunday: 11:00 AM – 8:00 PM"
-
+export const default_image = "/logo.png"
 export const phone = {
 	href: "tel:+2018152416",
 	label: "(201) 815-2416",
