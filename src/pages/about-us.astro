@@ -10,9 +10,11 @@ import Article from "~/components/Article.astro";
 
 // Images
 import rosa from "~/assets/images/rosa.jpeg";
+import MotionSection from "~/components/MotionSection.astro";
 ---
 
 <Layout>
+	<MotionSection delay={300}>
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
@@ -70,4 +72,5 @@ import rosa from "~/assets/images/rosa.jpeg";
 
 		</Article>
 	</Section>
+	</MotionSection>
 </Layout>

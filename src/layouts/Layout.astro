@@ -1,6 +1,6 @@
 ---
 import "~/styles/tailwind.css";
-import { ClientRouter } from "astro:transitions";
+import { ClientRouter} from "astro:transitions";
 import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
 const { pageTitle, title, description, default_image} = Astro.props;
@@ -83,11 +83,23 @@ import { siteLang, themeColor } from "~/data/config";
 		<ClientRouter />
 	</head>
 	<body>
+
 		<Header />
-		<main class="min-h-screen">
+		<main class="min-h-screen " >
 			<slot />
-		</main>
+\		</main>
 		<Footer />
+
+		<script type="module" is:inline src="/src/scripts/motion-init.js"></script>
+		  
+		  
 	</body>
 </html>
 
+<style>
+	*, html {
+
+		scroll-behavior: smooth !important;
+		}
+
+</style>

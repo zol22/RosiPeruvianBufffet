@@ -1,0 +1,16 @@
+---
+
+const { delay = 0 , as = 'div',  ...rest} = Astro.props;
+const Tag = as;
+
+
+
+---
+
+<Tag class="opacity-0 will-change-transform"
+    data-motion
+    data-delay={delay}
+    {...rest}
+>
+    <slot />
+</Tag>

@@ -3,9 +3,11 @@ import Layout from "~/layouts/Layout.astro";
 import Section from "~/components/Section.astro";
 import Heading from "~/components/Heading.astro";
 import MenuList from "~/components/Menu.astro";
+import MotionSection from "~/components/MotionSection.astro";
 ---
 
 <Layout>
+	<MotionSection delay={300}>
 	<Section>
 		<Heading>
 			<h1 slot="heading-title" class="font-black text-brand-peru h2">Our menu</h1>
@@ -16,4 +18,5 @@ import MenuList from "~/components/Menu.astro";
 
 		<MenuList />
 	</Section>
+	</MotionSection>
 </Layout>
